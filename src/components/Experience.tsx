@@ -39,6 +39,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'Picme Technology Inc',
     initials: 'PIC',
+    location: 'San Francisco, USA · Remote',
     roles: [
       {
         title: 'React Native Developer',
@@ -51,6 +52,7 @@ const experiences: ExperienceItem[] = [
   {
     company: 'Fireside',
     initials: 'FS',
+    location: 'San Francisco, USA · Remote',
     link: 'https://www.theverge.com/2021/2/8/22272148/mark-cuban-fireside-podcast-app-launch-creator-conversations',
     description: 'Joined when the frontend had zero code and only initial designs, with basic backend infrastructure already in place. As one of two frontend engineers, built the first React Native components and delivered a working MVP within 3 months. Post-launch, continued for 6 more months as early podcasters gave feedback on the product, the team grew, and the platform scaled. Work involved complex audio streaming, real-time performance optimisation, and animation. Fireside launched with backing from notable investors including Mark Cuban.',
     roles: [
