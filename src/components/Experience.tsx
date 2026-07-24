@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 interface Role {
   title: string
   period: string
@@ -9,6 +11,7 @@ interface ExperienceItem {
   company: string
   initials: string
   location?: string
+  description?: string
   roles: Role[]
 }
 
@@ -47,12 +50,13 @@ const experiences: ExperienceItem[] = [
   {
     company: 'Fireside',
     initials: 'FS',
+    description: 'Joined when the frontend had zero code and only initial designs, with basic backend infrastructure already in place. As one of two frontend engineers, built the first React Native components and delivered a working MVP within 3 months. Post-launch, continued for 6 more months as early podcasters gave feedback on the product, the team grew, and the platform scaled. Work involved complex audio streaming, real-time performance optimisation, and animation. Fireside launched with backing from notable investors including Mark Cuban.',
     roles: [
       {
         title: 'Frontend Developer',
         period: 'Aug 2020 – Apr 2021 · 9 mos',
         type: 'Contract',
-        tags: ['Next.js', 'CSS', 'JavaScript'],
+        tags: ['React Native', 'Next.js', 'CSS', 'JavaScript', 'Audio Streaming'],
       },
     ],
   },
@@ -76,49 +80,71 @@ const experiences: ExperienceItem[] = [
         title: 'WordPress Developer',
         period: 'Oct 2019 – Mar 2020 · 6 mos',
         type: 'Freelance',
-        tags: ['WordPress', 'CSS', 'PHP'],
+        tags: ['WordPress', 'CSS'],
       },
     ],
   },
 ]
 
-const Experience = () => (
-  <section className="section" id="experience">
-    <div className="container">
-      <p className="section-label">Where I've Worked</p>
-      <h2 className="section-title">Experience</h2>
-      <div className="experience__list">
-        {experiences.map((exp) => (
-          <div className="exp-card" key={exp.company}>
-            <div className="exp-card__header">
-              <div className="exp-card__logo">{exp.initials}</div>
-              <div>
-                <div className="exp-card__company">{exp.company}</div>
-                {exp.location && (
-                  <div className="exp-card__location">{exp.location}</div>
-                )}
+const VISIBLE_COUNT = 3
+
+const Experience = () => {
+  const [showAll, setShowAll] = useState(false)
+
+  const visible = showAll ? experiences : experiences.slice(0, VISIBLE_COUNT)
+
+  return (
+    <section className="section" id="experience">
+      <div className="container">
+        <p className="section-label">Where I've Worked</p>
+        <h2 className="section-title">Experience</h2>
+        <div className="experience__list">
+          {visible.map((exp) => (
+            <div className="exp-card" key={exp.company}>
+              <div className="exp-card__header">
+                <div className="exp-card__logo">{exp.initials}</div>
+                <div>
+                  <div className="exp-card__company">{exp.company}</div>
+                  {exp.location && (
+                    <div className="exp-card__location">{exp.location}</div>
+                  )}
+                </div>
+              </div>
+              {exp.description && (
+                <p className="exp-card__desc">{exp.description}</p>
+              )}
+              <div className="exp-card__roles">
+                {exp.roles.map((role) => (
+                  <div className="exp-role" key={role.title}>
+                    <div className="exp-role__title">{role.title}</div>
+                    <div className="exp-role__period">
+                      {role.type} · {role.period}
+                    </div>
+                    <div className="exp-role__tags">
+                      {role.tags.map((tag) => (
+                        <span className="tag" key={tag}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="exp-card__roles">
-              {exp.roles.map((role) => (
-                <div className="exp-role" key={role.title}>
-                  <div className="exp-role__title">{role.title}</div>
-                  <div className="exp-role__period">
-                    {role.type} · {role.period}
-                  </div>
-                  <div className="exp-role__tags">
-                    {role.tags.map((tag) => (
-                      <span className="tag" key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {!showAll && (
+          <button className="show-more-btn" onClick={() => setShowAll(true)}>
+            Show earlier experience ↓
+          </button>
+        )}
+        {showAll && (
+          <button className="show-more-btn" onClick={() => setShowAll(false)}>
+            Show less ↑
+          </button>
+        )}
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default Experience
