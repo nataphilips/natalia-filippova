@@ -16,7 +16,8 @@ const Hero = () => (
         Fullstack engineer with 6+ years shipping production software in fintech and consumer apps.
         Strong frontend focus with hands-on React Native mobile development. I've built products
         from the ground up in early-stage startups and scaled features in regulated enterprise
-        environments. Currently Senior Software Engineer at OFX.
+        environments. I actively use AI tools to enhance my development workflow.
+        Currently Senior Software Engineer at OFX.
       </p>
       <div className="hero__ctas">
         <a href="#experience" className="btn btn--primary">View Experience</a>
