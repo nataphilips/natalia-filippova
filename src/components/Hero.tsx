@@ -13,9 +13,10 @@ const Hero = () => (
         <span>Sunshine Coast, Queensland, Australia</span>
       </div>
       <p className="hero__bio">
-        I've been studying and working with JavaScript since 2018. As a fullstack engineer
-        with strong frontend expertise, I specialise in building React and React Native
-        applications. Currently working remotely as Senior Software Engineer at OFX.
+        Fullstack engineer with 6+ years shipping production software in fintech and consumer apps.
+        Strong frontend focus with hands-on React Native mobile development. I've built products
+        from the ground up in early-stage startups and scaled features in regulated enterprise
+        environments. Currently Senior Software Engineer at OFX.
       </p>
       <div className="hero__ctas">
         <a href="#experience" className="btn btn--primary">View Experience</a>

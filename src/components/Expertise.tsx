@@ -1,21 +1,21 @@
 const expertiseItems = [
   {
     icon: '🖥️',
-    title: 'Frontend Development',
-    desc: 'Building responsive, performant web applications with modern frameworks. Strong focus on clean UI, component architecture, and great user experience.',
-    tags: ['React', 'TypeScript', 'Next.js', 'HTML5', 'CSS', 'styled-components'],
+    title: 'Frontend & Mobile',
+    desc: 'Building responsive web applications and cross-platform mobile apps using React Native and Capacitor — including bundling web codebases into full-fledged iOS and Android apps. Strong component architecture, clean UI, and a consistent focus on user experience across web and native.',
+    tags: ['React', 'TypeScript', 'React Native', 'Capacitor', 'Next.js', 'styled-components', 'Xcode'],
+  },
+  {
+    icon: '🏗️',
+    title: 'Startup to Enterprise',
+    desc: 'Experience across the full spectrum — greenfield builds in early-stage startups where I owned features end-to-end, and brownfield development in a regulated fintech environment with complex existing systems.',
+    tags: ['Greenfield', 'Brownfield', 'Fintech', 'Agile', 'Remote'],
   },
   {
     icon: '⚙️',
-    title: 'Fullstack Development',
-    desc: 'End-to-end product development spanning backend APIs, cloud infrastructure, and polished frontend interfaces.',
-    tags: ['Node.js', 'JavaScript', 'AWS', 'SQL', 'PHP'],
-  },
-  {
-    icon: '📱',
-    title: 'Mobile Development',
-    desc: 'Cross-platform iOS and Android app development using React Native, delivering native-quality experiences from a shared codebase.',
-    tags: ['React Native', 'Xcode', 'iOS', 'Android'],
+    title: 'Fullstack & Cloud',
+    desc: 'End-to-end development from backend APIs and cloud infrastructure to polished frontend interfaces. Comfortable across the stack with a focus on reliability and maintainability.',
+    tags: ['Node.js', 'JavaScript', 'AWS', 'REST APIs'],
   },
 ]
 
