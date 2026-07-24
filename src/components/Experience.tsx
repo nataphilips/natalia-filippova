@@ -85,6 +85,9 @@ const experiences: ExperienceItem[] = [
   {
     company: 'CASA ELIA',
     initials: 'CE',
+    location: 'Bran, Romania · Remote',
+    link: 'https://casaelia.ro/en/',
+    description: 'Built the first version of the website for a well-regarded family guesthouse and farm stay in Bran, Romania — a 5-star rated property set on 10,000+ sqm of private land, known for its farm-to-table hospitality and family-friendly atmosphere. The site was later redesigned and updated by others.',
     roles: [
       {
         title: 'WordPress Developer',
