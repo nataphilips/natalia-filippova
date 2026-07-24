@@ -71,6 +71,8 @@ const experiences: ExperienceItem[] = [
   {
     company: 'Podvine',
     initials: 'PV',
+    location: 'London, UK · Remote',
+    description: 'First hands-on React Native project — a social podcasting platform combining audio content discovery with community features such as following, liking, and sharing. Contributed during the early-stage build; the platform went on to grow a community of 20,000+ podcast hosts.',
     roles: [
       {
         title: 'Junior Software Developer',
