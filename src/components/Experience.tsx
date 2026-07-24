@@ -21,6 +21,7 @@ const experiences: ExperienceItem[] = [
     company: 'OFX',
     initials: 'OFX',
     location: 'Sunshine Coast, QLD, Australia',
+    link: 'https://www.ofx.com',
     description: 'Joined as a React Native developer on OFX\'s consumer money transfer app — a globally-used platform for international transfers across 50+ currencies. Following OFX\'s acquisition of B2B payments company Paytron in 2023, expanded into fullstack development on the job, with the support of colleagues — contributing to OFX 2.0: a new business financial platform built for web and Capacitor, adding multi-currency accounts, corporate cards, and spend management. Alongside consumer features, a major team contribution was building an internal admin system that significantly improved the efficiency of OFX\'s support staff. The team also adopted AI tooling for both development productivity and support workflows.',
     roles: [
       {
