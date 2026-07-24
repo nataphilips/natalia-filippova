@@ -306,6 +306,16 @@ a {
   margin-bottom: 2px;
 }
 
+.exp-card__company--link {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.exp-card__company--link:hover {
+  text-decoration: underline;
+}
+
 .exp-card__location {
   font-size: 0.82rem;
   color: var(--text-muted);
