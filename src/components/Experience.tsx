@@ -41,7 +41,7 @@ const experiences: ExperienceItem[] = [
     initials: 'PIC',
     location: 'San Francisco, USA · Remote',
     link: 'https://picmedating.com/',
-    description: 'Joined an existing React Native dating app with a functioning backend but considerable frontend technical debt — including animation inconsistencies and performance issues that were impacting user experience. Resolved those issues, then adopted a full redesign across the app. The flagship achievement was migrating the entire codebase from JavaScript to TypeScript, significantly improving maintainability and type safety. The app is still live and receiving updates on the App Store.',
+    description: 'Joined an existing React Native dating app with a functioning backend but considerable frontend technical debt — including animation inconsistencies and performance issues that were impacting user experience. Resolved those issues, then adopted a redesign across the app. The flagship achievement was migrating the entire codebase from JavaScript to TypeScript, significantly improving maintainability and type safety. The app is still live and receiving updates on the App Store.',
     roles: [
       {
         title: 'React Native Developer',
